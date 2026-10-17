@@ -11,7 +11,7 @@ correction.
 
 ## Repository layout
 
-- `eswa/`: PriFCT experiments, ablations, sensitivity analyses, and external
+- `prifct/`: PriFCT experiments, ablations, sensitivity analyses, and external
   validation runners.
 - `core/`: shared preprocessing and privacy utilities.
 - `revision/`: bounded-function construction and one-release mechanism.
@@ -27,29 +27,29 @@ Run commands from the repository root.
 
 ```bash
 # Fixed UCI HAR comparison
-python -m eswa.v47_uci_har proposed
-python -m eswa.v47_uci_har private
-python -m eswa.v47_uci_har context
+python -m prifct.v47_uci_har proposed
+python -m prifct.v47_uci_har private
+python -m prifct.v47_uci_har context
 
 # Same-packet ablation and sensitivity studies
-python -m eswa.neurocomputing_r3_core_ablation
-python -m eswa.neurocomputing_low_epsilon_private_baselines
-python -m eswa.neurocomputing_streamlined_public_sensitivity
-python -m eswa.neurocomputing_streamlined_fullmap_sensitivity
-python -m eswa.neurocomputing_repeated_cohort_splits
+python -m prifct.neurocomputing_r3_core_ablation
+python -m prifct.neurocomputing_low_epsilon_private_baselines
+python -m prifct.neurocomputing_streamlined_public_sensitivity
+python -m prifct.neurocomputing_streamlined_fullmap_sensitivity
+python -m prifct.neurocomputing_repeated_cohort_splits
 
 # KU-HAR sequential external evaluation
-python -m eswa.v48_ku_har
-python -m eswa.v48_ku_har_analysis
+python -m prifct.v48_ku_har
+python -m prifct.v48_ku_har_analysis
 
 # PAMAP2 sequential external evaluation
-python -m eswa.v128_pamap2_acquisition
-python -m eswa.v130_pamap2_preutility_feasibility
-python -m eswa.v131_pamap2_descriptors
-python -m eswa.v132_pamap2_frozen_prifct
-python -m eswa.v133_pamap2_frozen_comparators
-python -m eswa.v134_pamap2_independent_analysis
-python -m eswa.v135_pamap2_gate_sensitivity
+python -m prifct.v128_pamap2_acquisition
+python -m prifct.v130_pamap2_preutility_feasibility
+python -m prifct.v131_pamap2_descriptors
+python -m prifct.v132_pamap2_frozen_prifct
+python -m prifct.v133_pamap2_frozen_comparators
+python -m prifct.v134_pamap2_independent_analysis
+python -m prifct.v135_pamap2_gate_sensitivity
 ```
 
 The private mechanism uses fixed seeds only for scientific replay. A real
