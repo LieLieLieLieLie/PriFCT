@@ -1,0 +1,40 @@
+# Local data and generated results
+data/
+results/
+checkpoints/
+logs/
+
+# Retrieved third-party repositories (the lightweight first-party adapters in
+# author_baselines_v6 remain versioned)
+eswa/author_baselines_v6/DP-*/
+eswa/author_baselines_v6/upstream/
+eswa/author_baselines_v6/raw_snapshot/
+eswa/author_baselines_v7/
+eswa/author_baselines_v8/
+
+# Python and tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Environments and editor metadata
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Generated archives and large binary artifacts
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.npz
+*.npy
+*.pkl
+*.pt
+*.pth
+*.log
+
